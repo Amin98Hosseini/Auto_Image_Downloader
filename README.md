@@ -1,7 +1,7 @@
 ## Auto Image Downloader With Python
 
 
-![opencv]([https://editor.analyticsvidhya.com/uploads/869691_JQofwNWO5ancK5ug2ezDgw.png](https://github.com/Amin98Hosseini/Auto_Image_Downloader/blob/main/App_Photo.png))
+![App Photo]([https://editor.analyticsvidhya.com/uploads/869691_JQofwNWO5ancK5ug2ezDgw.png](https://github.com/Amin98Hosseini/Auto_Image_Downloader/blob/main/App_Photo.png])
 
 *	Author:     Amin Hosseini
 *	WebSite:    https://www.elecomp-tech.ir
