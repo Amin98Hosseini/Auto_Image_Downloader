@@ -10,18 +10,22 @@ import os
 import sys
 import threading
 import ctypes
+import webbrowser
+
+
+url = "https://github.com/Amin98Hosseini"
 
 customtkinter.set_appearance_mode("System")  # Modes: "System" (standard), "Dark", "Light"
 customtkinter.set_default_color_theme("blue")  # Themes: "blue" (standard), "green", "dark-blue"
 
 
-class ToplevelWindow(customtkinter.CTkToplevel):
+'''class ToplevelWindow(customtkinter.CTkToplevel):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.geometry("400x300")
 
-        self.label = customtkinter.CTkLabel(self, text="ToplevelWindow")
-        self.label.pack(padx=20, pady=20)
+        self.label_Toplevel = customtkinter.CTkLabel(self, text="ToplevelWindow")
+        self.label_Toplevel.pack(padx=20, pady=20)'''
 
 class App(customtkinter.CTk):
     def __init__(self):
@@ -48,7 +52,7 @@ class App(customtkinter.CTk):
         self.title("Image Datasets Downloader V1.0.1")
         self.geometry(f"{720}x{480}")
 
-        self.iconbitmap(r'C:\Users\Amin\Desktop\DataSet_Downloader\download.ico')
+        self.iconbitmap(r'download.ico')
 
         # configure grid layout (4x4)
         self.grid_columnconfigure(1, weight=1)
@@ -151,10 +155,12 @@ class App(customtkinter.CTk):
 
     def sidebar_button_event(self):
         print("sidebar_button click")
-        if self.toplevel_window is None or not self.toplevel_window.winfo_exists():
+        new = 1
+        webbrowser.open(url,new=new)
+        '''if self.toplevel_window is None or not self.toplevel_window.winfo_exists():
             self.toplevel_window = ToplevelWindow(self)  # create window if its None or destroyed
         else:
-            self.toplevel_window.focus()  # if window exists focus it
+            self.toplevel_window.focus()  # if window exists focus it'''
 
     def Make_Text(self):
         print("Make")
