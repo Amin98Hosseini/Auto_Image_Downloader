@@ -1,3 +1,9 @@
+# Programmer's Name: Mohammad Amin Khadem Al Hosseini
+# Date of Publication: October 5, 2023
+# Program Version: 1.0.1
+# MIT License
+
+
 from pygoogle_image import image as pi
 import tkinter
 import tkinter.messagebox
